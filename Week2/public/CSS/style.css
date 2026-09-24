@@ -1,0 +1,32 @@
+h1 {
+  color: #b41b1b;
+  margin-left: 20px;
+}
+
+p {
+  font-size: 25px;
+}
+
+button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    color: rgb(31,42,19);
+    background-color: #1b89b4;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #5f5858;
+}
+
+button:hover {
+    background-color: rgb(31,42,35)
+}
+
+button:active {
+  background-color: rgb(28,68,35);
+  box-shadow: 0 5px #393535;
+  transform: translateY(4px);
+}

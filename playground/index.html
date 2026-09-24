@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Essential Web Design Principles</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      color: #222;
+      background-color: #f8f9fa;
+    }
+    header, footer {
+      background-color: #1e293b;
+      color: #fff;
+      padding: 1rem 2rem;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section, article, aside {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+    }
+    aside {
+      background-color: #f1f5f9;
+    }
+    address {
+      font-style: normal;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<!-- 1. <body>: Contains the visible structure and content of the page -->
+<body>
+
+  <!-- 2. <header>: Introductory content at the top of the page -->
+  <header>
+    <!-- 3. <hgroup>: Groups a primary heading with a secondary title or tagline -->
+    <hgroup>
+      <!-- 4. <h1>: Top-level primary document heading -->
+      <h1>Web Design Principles</h1>
+      <p>Building usable, accessible, and beautiful web applications</p>
+    </hgroup>
+
+    <!-- 5. <nav>: Major navigation links section -->
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#visual-hierarchy">Hierarchy</a></li>
+        <li><a href="#accessibility">Accessibility</a></li>
+        <li><a href="#responsiveness">Responsive Design</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 6. <main>: Main dominant content region of the body -->
+  <main>
+
+    <!-- Primary content column -->
+    <div>
+      <!-- 7. <section>: Structural section grouping related articles or content -->
+      <section id="visual-hierarchy">
+        <!-- 8. <h2>: Second-level heading -->
+        <h2>1. Visual Hierarchy & Clarity</h2>
+
+        <!-- 9. <article>: Self-contained topic or article -->
+        <article>
+          <!-- 10. <h3>: Third-level heading -->
+          <h3>Guiding the User's Eye</h3>
+          <p>Visual hierarchy organizes content so users naturally notice the most important elements first through contrast, size, and layout alignment.</p>
+          
+          <!-- 11. <h4>: Fourth-level heading -->
+          <h4>Typography & Scale</h4>
+          <p>Using distinct font scales creates predictable reading paths across long pages.</p>
+          
+          <!-- 12. <h5>: Fifth-level heading -->
+          <h5>Font Weight Contrast</h5>
+          <p>Bold titles combined with regular body text clearly separate headings from paragraphs.</p>
+          
+          <!-- 13. <h6>: Sixth-level heading -->
+          <h6>Minor Sub-caption Example</h6>
+          <p>Smallest heading level used for minor annotations or inline sub-sections.</p>
+        </article>
+      </section>
+
+      <section id="accessibility">
+        <h2>2. Inclusive & Accessible Design</h2>
+        <article>
+          <h3>Designing for Everyone</h3>
+          <p>Accessible web design ensures people with varying abilities can perceive, understand, navigate, and interact with the site seamlessly.</p>
+        </article>
+      </section>
+    </div>
+
+    <!-- 14. <aside>: Related sidebar content tangential to main topic -->
+    <aside>
+      <h2>Design Quick Tips</h2>
+      <ul>
+        <li>Maintain consistent whitespace padding.</li>
+        <li>Ensure high color contrast ratios.</li>
+        <li>Design mobile-first layouts.</li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <!-- 15. <footer>: Footer region containing metadata or contact details -->
+  <footer>
+    <p>&copy; Web Design Educational Guide</p>
+    
+    <!-- 16. <address>: Contact information for the author or page owner -->
+    <address>
+      Written by the Web Curriculum Team<br>
+      Contact us at: <a href="mailto:design-team@example.edu" style="color: #38bdf8;">design-team@example.edu</a>
+    </address>
+  </footer>
+
+</body>
+</html>
